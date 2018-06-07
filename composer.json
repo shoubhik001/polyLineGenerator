@@ -1,0 +1,42 @@
+{
+    "name": "chikpea/chikpenow",
+    "type": "project",
+    "description": "A portal that allow customer to connect chikpea billing solution in Salesforce.",
+    "keywords": ["portal", "ckipeanow", "o2bportal"],
+    "homepage": "http://chikpea.com",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Pritis Nayak",
+            "email": "pritis@chikpea.com",
+            "homepage": "http://pritis.com",
+            "role": "Development Manager"
+        }
+    ],
+    "require": {
+		"php": "^5.5.0",
+        "developerforce/force.com-toolkit-for-php": "1.0.x-dev",
+        "google/apiclient": "1.0.*@beta",
+        "monolog/monolog": "~1.7",
+        "silex/silex": "~1.1",
+        "twig/twig": "~1.18",
+        "symfony/twig-bridge": "~2.7",
+        "mheap/silex-assetic": "~2.0",
+        "doctrine/dbal": "~2.2",
+		"ext-soap": "*",
+        "ext-gd": "*",
+        "ext-curl": "*",
+        "authorizenet/authorizenet": "1.8.0"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*",
+        "phpunit/phpunit": "~4.6"
+    },
+    "autoload": {
+	    
+        "psr-4": {
+            "Chikpea\\Portal\\O2B\\": ["src/App", "src/Test", "library/"]
+			 
+        }
+    } 
+}
